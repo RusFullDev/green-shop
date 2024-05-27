@@ -66,7 +66,7 @@
 
                     },
                     {
-                        img:'/public/img/image 7.png',
+                        img:'/img/image 7.png',
                         name:'Blushing Bromeliad',
                         price:'$139.00',
                         oldPrice:''
@@ -87,7 +87,7 @@
 
                     },
                     {
-                        img:'/public/img/product-20-320x320 1.png',
+                        img:'/img/product-20-320x320 1.png',
                         name:'Broadleaf Lady Palm',
                         price:'$59.00',
                         oldPrice:''
