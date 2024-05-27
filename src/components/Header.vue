@@ -13,19 +13,23 @@
         <div class="flex">
             <div class="flex relative">
 <img src="/public/img/Logout.png" alt="Logout" class="flex absolute pt-2 pl-2">
-            <button class="h-[35px] w-[100px] border-none bg-slate-400 text-black hover:bg-[#46A358] hover:text-white rounded-md text-center">Login</button>
+            <button @click ="IsModal=true" class="h-[35px] w-[100px] border-none bg-slate-400 text-black hover:bg-[#46A358] hover:text-white rounded-md text-center">Login</button>
         </div>
         </div>
     </div>
+    <AuthModel v-if="IsModal" @close="IsModal=false"/>
     </div>
  
 </template>
 
 <script>
+import AuthModel from './AuthModel.vue';
+
     export default {
-      
+      components:{AuthModel},
         data(){
             return{
+                IsModal:false,
             menu:[
                 {
                     name:'Home',

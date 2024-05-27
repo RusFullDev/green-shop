@@ -1,11 +1,13 @@
 <script>
+import AuthModel from './components/AuthModel.vue';
 import Category from './components/Category.vue';
 import Header from './components/Header.vue';
+
 import MenuProduct from './components/MenuProduct.vue';
 import Picture from './components/Picture.vue';
 import Product from './components/Product.vue';
 export default{
-  components:{Header,Picture,Category,Product,MenuProduct},
+  components:{Header,Picture,Category,Product,MenuProduct,AuthModel},
   data(){
     return{
     }
@@ -18,18 +20,21 @@ export default{
   <div class="container">
       <Header/>
     
+    
 
     <div>
       <Picture/>
     </div>
     <div class="grid grid-cols-2">
       <Category/>
-      <!-- <div>
-        <MenuProduct/> -->
+      <!-- <div> -->
+        <!-- <MenuProduct/>  -->
         <Product/>
       <!-- </div> -->
       
     </div>
+
+
 
   </div>
 

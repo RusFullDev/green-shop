@@ -1,6 +1,8 @@
 <template>
-  
+
+
   <div class="grid grid-cols-3 gap-[33px] col-start-3 items-center" >
+
 <div v-for="item,index in flowers" :key='index'  @mouseover="item.hover = true" @mouseleave="item.hover = false">
     <div class="relative">
 <img :src="item.img" alt="flowers" class="">
@@ -23,6 +25,8 @@
 </template>
 
 <script>
+import MenuProduct from './MenuProduct.vue';
+
     export default {
         data(){
             return{
