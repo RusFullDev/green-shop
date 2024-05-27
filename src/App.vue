@@ -15,9 +15,8 @@ export default{
 <template>
 
   <div class="container">
-    <div>
       <Header/>
-    </div>
+    
 
     <div>
       <Picture/>

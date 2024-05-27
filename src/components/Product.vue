@@ -38,28 +38,28 @@
             return{
                 flowers:[
                     {
-                        img:'/public/img/image 1.png',
+                        img:'/img/image 1.png',
                         name:'Barberton Daisy',
                         price:'$119.00',
                         oldPrice:''
 
                     },
                     {
-                        img:'/public/img/product-21-320x320 1.png',
+                        img:'/img/product-21-320x320 1.png',
                         name:'Angel Wing Begonia',
                         price:'$169.00',
                         oldPrice:''
 
                     },
                     {
-                        img:'/public/img/image 2.png',
+                        img:'/img/image 2.png',
                         name:'African Violet',
                         price:'$199.00',
                         oldPrice:'$229.00'
 
                     },
                     {
-                        img:'/public/img/01 3.png',
+                        img:'/img/01 3.png',
                         name:'Beach Spider Lily',
                         price:'$129.00',
                         oldPrice:''
@@ -73,14 +73,14 @@
 
                     },
                     {
-                        img:'/public/img/image 8.png',
+                        img:'/img/image 8.png',
                         name:'Aluminum Plant',
                         price:'$179.00',
                         oldPrice:''
 
                     },
                     {
-                        img:'/public/img/image 8.png',
+                        img:'/img/image 8.png',
                         name:'Bird\'s Nest Fern',
                         price:'$99.00',
                         oldPrice:''
@@ -94,7 +94,7 @@
 
                     },
                     {
-                        img:'/public/img/image 10.png',
+                        img:'/img/image 10.png',
                         name:'Chinese Evergreen',
                         price:'$39.00',
                         oldPrice:''
