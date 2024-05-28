@@ -18,11 +18,13 @@
     <div v-if="content == 'login'">
         <div class=" mt-5 mb-5 text-center">
     <p class="text-sm font-normal text-[#3D3D3D] pb-[14px] text-center">Enter your username and password to login.</p>
-    <input type="text" placeholder="almamun_uxui@outlook.com" class="w-[300px] h-[40px]  border-2 rounded-[5px] border-[#EAEAEA] text-start px-4 ">
+    <input type="text" placeholder="almamun_uxui@outlook.com" class="w-[300px] h-[40px]  border-2 rounded-[5px] border-[#EAEAEA] text-start px-4 outline-none focus:border-green-500 ">
     <div class="mt-5 mb-[14px] relative">
-        <input type="password" placeholder="**************" class="w-[300px] h-[40px] border-2 rounded-[5px] border-[#EAEAEA] text-start px-4 cursor-pointer">
-        <button><img src="/img/Hide.png" alt="Hide" class="absolute z-10 right-[80px] top-1/4"></button>
-    </div>
+        <input :type="show ?'text':'password'" placeholder="**************" class="w-[300px] h-[40px] border-2 rounded-[5px] border-[#EAEAEA] text-start px-4 cursor-pointer">
+                <button v-if="!show" @click = "showPassword"><img src="/img/Hide.png" alt="Hide" class="absolute z-10 right-[80px] top-1/4"></button>
+                <button v-else="show" @click = "showPassword"><img src="/img/clarity--eye-show-line.svg" alt="Hide" class="absolute z-10 right-[80px] top-1/4"></button>
+    
+            </div>
    <div class=" pb-[27px]"><a href="#" class="hover:text-[#46A358] text-[#3D3D3D] text-xs leading-4 font-normal">Forgot Password?</a> </div>
     <button class="w-[300px] h-[40px] border-1 rounded-[5px] text-[#3D3D3D] bg-slate-500 hover:bg-[#46A358]
      hover:text-white font-bold text-base duration-100 cursor-pointer ">Login</button>
@@ -52,10 +54,12 @@
     <input type="text" placeholder="Username" class="w-[300px] h-[40px]  border-2 rounded-[5px] border-[#EAEAEA] text-start px-4 mb-4 ">
     <input type="text" placeholder="Enter your email address" class="w-[300px] h-[40px]  border-2 rounded-[5px] border-[#EAEAEA] text-start px-4 ">
     <div class="mt-5 mb-[14px] relative">
-        <input type="password" placeholder="Password" class="w-[300px] h-[40px] border-2 rounded-[5px] border-[#EAEAEA] text-start px-4 cursor-pointer">
-        <button><img src="/img/Hide.png" alt="Hide" class="absolute z-10 right-[80px] top-1/4"></button>
-    </div>
-    <input type="password" placeholder="Confirm Password" class="w-[300px] h-[40px]  border-2 rounded-[5px] border-[#EAEAEA] text-start px-4 mb-[41px]">
+        <input :type="show ?'text':'password'" placeholder="**************" class="w-[300px] h-[40px] border-2 rounded-[5px] border-[#EAEAEA] text-start px-4 cursor-pointer">
+                <button v-if="!show" @click = "showPassword"><img src="/img/Hide.png" alt="Hide" class="absolute z-10 right-[80px] top-1/4 "></button>
+                <button v-else="show" @click = "showPassword"><img src="/img/clarity--eye-show-line.svg" alt="Hide" class="absolute z-10 right-[80px] top-1/4 "></button>
+    
+            </div>
+    <input type="text" placeholder="Confirm Password" class="w-[300px] h-[40px]  border-2 rounded-[5px] border-[#EAEAEA] text-start px-4 mb-[41px]">
 
     <button class="w-[300px] h-[40px] border-1 rounded-[5px] text-[#3D3D3D] bg-slate-500 hover:bg-[#46A358]
      hover:text-white font-bold text-base  duration-100 cursor-pointer ">Register</button>
@@ -94,13 +98,19 @@
     export default {
         data(){
             return{
-                content:'login'
+                content:'login',
+                show:false
+
             }
         },
         methods:{
             closeModal(){
                 this.$emit('close')
+            },
+            showPassword(){
+this.show= !this.show
             }
+
         }
 
     }
