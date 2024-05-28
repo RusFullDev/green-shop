@@ -1,6 +1,6 @@
 <template>
 
-
+<!-- <MenuProduct/> -->
   <div class="grid grid-cols-3 gap-[33px] col-start-3 items-center" >
 
 <div v-for="item,index in flowers" :key='index'  @mouseover="item.hover = true" @mouseleave="item.hover = false">
@@ -18,16 +18,18 @@
         <p class="text-[#46A358] text-lg leading-4 font-bold">{{ item.price }}</p>
         <p class="text-[#A5A5A5] text-lg leading-4 font-normal line-through">{{ item.oldPrice }}</p>
     </div> 
-
-    
 </div>
     </div>
+
+
 </template>
 
 <script>
 import MenuProduct from './MenuProduct.vue';
 
+
     export default {
+        components:{MenuProduct},
         data(){
             return{
                 flowers:[

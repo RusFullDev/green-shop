@@ -13,7 +13,7 @@
         <div class="flex">
             <div class="flex relative">
 <img src="/public/img/Logout.png" alt="Logout" class="flex absolute pt-2 pl-2">
-            <button @click ="IsModal=true" class="h-[35px] w-[100px] border-none bg-slate-400 text-black hover:bg-[#46A358] hover:text-white rounded-md text-center">Login</button>
+            <button @click ="IsModal=true" class="h-[35px] w-[100px] border-none bg-green-500 text-black hover:bg-[#46A358] hover:text-white rounded-md text-center">Login</button>
         </div>
         </div>
     </div>
