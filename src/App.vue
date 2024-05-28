@@ -1,5 +1,6 @@
 <script>
 import AuthModel from './components/AuthModel.vue';
+import Carousel from './components/Carousel.vue';
 import Category from './components/Category.vue';
 import Header from './components/Header.vue';
 
@@ -7,7 +8,7 @@ import MenuProduct from './components/MenuProduct.vue';
 import Picture from './components/Picture.vue';
 import Product from './components/Product.vue';
 export default{
-  components:{Header,Picture,Category,Product,MenuProduct,AuthModel},
+  components:{Header,Picture,Category,Product,MenuProduct,AuthModel,Carousel},
   data(){
     return{
     }
@@ -23,7 +24,8 @@ export default{
     
 
     <div>
-      <Picture/>
+      <!-- <Picture/> -->
+      <Carousel/>
     </div>
     <div class="grid grid-cols-2">
       <Category/>

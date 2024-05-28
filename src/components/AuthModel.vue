@@ -55,7 +55,7 @@
         <input type="password" placeholder="Password" class="w-[300px] h-[40px] border-2 rounded-[5px] border-[#EAEAEA] text-start px-4 cursor-pointer">
         <button><img src="/img/Hide.png" alt="Hide" class="absolute z-10 right-[80px] top-1/4"></button>
     </div>
-    <input type="text" placeholder="Confirm Password" class="w-[300px] h-[40px]  border-2 rounded-[5px] border-[#EAEAEA] text-start px-4 mb-[41px]">
+    <input type="password" placeholder="Confirm Password" class="w-[300px] h-[40px]  border-2 rounded-[5px] border-[#EAEAEA] text-start px-4 mb-[41px]">
 
     <button class="w-[300px] h-[40px] border-1 rounded-[5px] text-[#3D3D3D] bg-slate-500 hover:bg-[#46A358]
      hover:text-white font-bold text-base  duration-100 cursor-pointer ">Register</button>
