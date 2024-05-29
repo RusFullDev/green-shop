@@ -27,25 +27,25 @@
             return{
                 posts:[
                     {
-                img:'/public/img/flower22.png',
+                img:'/img/flower22.png',
                 date:'September 12  I Read in 6 minutes',
                 title:'Cactus & Succulent Care Tips',
                 info:'Cacti are succulents are easy care plants for any home or patio. '
                     },
                     {
-                img:'/public/img/flower23.png',
+                img:'/img/flower23.png',
                 date:'September 13  I Read in 2 minutes',
                 title:'Top 10 Succulents for Your Home',
                 info:'Best in hanging baskets. Prefers medium to high light.'
                     },
                     {
-                img:'/public/img/flower3.png',
+                img:'/img/flower3.png',
                 date:'September 15  I Read in 3 minutes',
                 title:'Cacti & Succulent Care Tips',
                 info:'Cacti and succulents thrive in containers and because most are..'
                     },
                     {
-                img:'/public/img/flower4.png',
+                img:'/img/flower4.png',
                 date:'September 15  I Read in 2 minutes',
                 title:'Best Houseplants Room by Room',
                 info:'The benefits of houseplants are endless. In addition to..'
