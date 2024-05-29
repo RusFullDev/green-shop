@@ -15,7 +15,7 @@
     <h3 class="text:[#3D3D3D] text-lg leading-4 font-bold">Price Range.</h3>
     <input type="range">
     <div class="flex gap-1"><h4 class="text-[#3D3D3D] text-[15px] leading-[40px] font-normal ">Price:</h4><p class="text-[#3D3D3D] text-[15px] leading-[40px] font-normal  hover:text-[#46A358]">$39 - $1230</p></div>
-    <button class="hover:bg-[#46A358] hover:text-white text-[#3D3D3D] text-base leading-5 font-bold w-[90px] h-[35px] rounded-md bg-green-500" >Filter</button>
+    <button class="hover:bg-[#46A358] text-white  text-base leading-5 font-semibold w-[90px] h-[35px] rounded-md bg-green-500" >Filter</button>
 </div>
 
 <div class=" pb-[19px] pl-[20px] pr-[24px] py-3">

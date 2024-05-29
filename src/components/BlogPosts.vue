@@ -6,7 +6,7 @@
 </div>
 <div class="grid grid-cols-4 gap-11">
 <div v-for="item,index in posts" :key="index" >
-<img :src="item.img" alt="" class="pb-2">
+<img :src="item.img" alt="" class="pb-2 w-full">
 <div class="h-[167px] w-[268] bg-[#FBFBFB] px-2">
 <p class="text-base text-[#46A358] font-medium pb-1">{{ item.date }}</p>
 <h2 class="text-[#3D3D3D] font-bold text-xl pb-1">{{item.title}}</h2>

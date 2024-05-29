@@ -7,7 +7,7 @@
     <h2 class="text-2xl font-bold uppercase">{{item.title}}</h2>
     <p class="text-[#727272] text-lg leadin-[24px]">{{ item.info }}</p>
   </div>
-    <button class="hover:bg-[#46A358] hover:text-white rounded-md h-[40px] w-[140px] text-black bg-green-500">Find More -></button>
+    <button class="hover:bg-[#46A358] text-white rounded-md h-[40px] w-[140px] bg-green-500">Find More -></button>
   </div>
 </div>
 
