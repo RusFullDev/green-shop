@@ -4,11 +4,13 @@ import Carousel from './components/Carousel.vue';
 import Category from './components/Category.vue';
 import Header from './components/Header.vue';
 
-import MenuProduct from './components/MenuProduct.vue';
+
 import Picture from './components/Picture.vue';
 import Product from './components/Product.vue';
+import CardTrend from './components/CardTrend.vue';
+import BlogPosts from './components/BlogPosts.vue';
 export default{
-  components:{Header,Picture,Category,Product,MenuProduct,AuthModel,Carousel},
+  components:{Header,Picture,Category,Product,AuthModel,Carousel,CardTrend,BlogPosts},
   data(){
     return{
     }
@@ -19,25 +21,16 @@ export default{
 <template>
 
   <div class="container">
-      <Header/>
-    
-    
-
-    <div>
-      <!-- <Picture/> -->
+      <Header/>    
       <Carousel/>
-    </div>
-    <div class="grid grid-cols-2">
+    
+  
+    <div class="grid grid-cols-4 gap-12">
       <Category/>
-      <!-- <div> -->
-        <!-- <MenuProduct/>  -->
-        <Product/>
-      <!-- </div> -->
-      
+        <Product class="col-span-3"/>
     </div>
-
-
-
+<CardTrend/>
+<BlogPosts/>
   </div>
 
 

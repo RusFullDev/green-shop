@@ -1,9 +1,12 @@
 <template>
-    <div class="flex justify-between gap-[50px] items-center border-b-2 h-[53px] py-8 px-16 shadow fixed top-0 left-0 w-full bg-white z-[20]">
+    <div class=" border-b-2  py-8 px-16 shadow fixed top-0 left-0 w-full bg-white z-[20]">
+        <div class="container flex justify-between gap-[50px] items-center">
+
+      
    <img src="/public/img/logo.png" alt=""> 
     <div class="flex gap-[50px]">
         <div v-for="item,index in menu" :key="index" class="flex gap-2 text-[#3D3D3D] text-base font-normal">
-        <a href="#" class="hover:text-black hover:font-bold hover:border-b-4 hover:border-[#46A358]">{{item.name}}</a>
+ <a href="#" class="text-black font-bold border-b-4 hover:border-green-500 hover:text-green-500">{{item.name}}</a>
         
     </div>
     </div>
@@ -17,6 +20,7 @@
         </div>
         </div>
     </div>
+</div>
     <AuthModel v-if="IsModal" @close="IsModal=false"/>
     </div>
  

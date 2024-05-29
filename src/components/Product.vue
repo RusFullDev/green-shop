@@ -1,35 +1,57 @@
 <template>
 
-<!-- <MenuProduct/> -->
-  <div class="grid grid-cols-3 gap-[33px] col-start-3 items-center" >
+<div>
+    <div class="flex justify-between pb-7">
+        <div class="flex gap-[37px]">
+        <button class="hover:text-green-500">All Plants</button>
+        <button class="hover:text-green-500">New Arrivals</button>
+        <button class="hover:text-green-500">Sale</button>
+    </div>
+       <div class="flex gap-1">
+        <h2>Short by:</h2>
+        <div class="flex gap-1">
+            <a href="#" class="hover:text-green-500">Default sorting</a>
+            <img src="/public/img/Arrow - Down 2.png" alt="">
+        </div>
+       </div>
+
+    </div>
+  <div class="grid grid-cols-3 gap-[33px]  items-center mb-[90px]" >
 
 <div v-for="item,index in flowers" :key='index'  @mouseover="item.hover = true" @mouseleave="item.hover = false">
+    <div>
     <div class="relative">
-<img :src="item.img" alt="flowers" class="">
-<div class="flex justify-center gap-3 mb-4 -bottom-1 left-[30%] absolute"
+<img :src="item.img" alt="flowers"> 
+<div class="flex justify-center gap-3 left-1/4 absolute"
                 :class="{ hidden: !item.hover }">
     <button><img :src="item.card" alt=""></button>
     <button><img :src="item.like" alt=""></button>
     <button><img :src="item.search" alt=""></button>
 </div> 
-</div>
-        <h3 class="text-[#3D3D3D] text-base leading-4 font-normal">{{ item.name }}</h3>
+<div class="">
+        <h3 class="text-[#3D3D3D] text-base leading-4 font-normal pt-5">{{ item.name }}</h3>
        <div class="flex gap-2">
         <p class="text-[#46A358] text-lg leading-4 font-bold">{{ item.price }}</p>
         <p class="text-[#A5A5A5] text-lg leading-4 font-normal line-through">{{ item.oldPrice }}</p>
     </div> 
 </div>
+</div>
+
+</div>
+</div>
     </div>
-
-
+<PageNumber/>       
+</div>
 </template>
 
 <script>
-import MenuProduct from './MenuProduct.vue';
+import PageNumber from './PageNumber.vue';
+
+
 
 
     export default {
-        components:{MenuProduct},
+        components:{PageNumber},
         data(){
             return{
                 flowers:[
