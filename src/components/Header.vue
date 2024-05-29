@@ -4,7 +4,7 @@
 
       
    <img src="/public/img/logo.png" alt=""> 
-    <div class="flex gap-[50px]">
+    <div class="flex gap-[50px] ">
         <div v-for="item,index in menu" :key="index" class="flex gap-2 text-[#3D3D3D] text-base font-normal">
  <a href="#" class="text-black font-bold border-b-4 hover:border-green-500 hover:text-green-500 border-transparent">{{item.name}}</a>
         

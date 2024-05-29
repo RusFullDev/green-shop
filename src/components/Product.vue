@@ -7,11 +7,12 @@
         <button class="hover:text-green-500">New Arrivals</button>
         <button class="hover:text-green-500">Sale</button>
     </div>
-       <div class="flex gap-1">
+       <div class="relative flex gap-1">
         <h2>Short by:</h2>
-        <div class="flex gap-1">
+        <div @click='isShowMenu = !isShowMenu' class="flex gap-1 ">
             <a href="#" class="hover:text-green-500">Default sorting</a>
-            <img src="/public/img/Arrow - Down 2.png" alt="">
+            <img src="/public/img/Arrow - Down 2.png" alt="" :class="isShowMenu ?'rotate-180':'rotate-0'" class="duration-200">
+            <Dropdown :class="isShowMenu ? 'opacity-100 visible':'opacity-0 invisible'"/>
         </div>
        </div>
 
@@ -47,13 +48,14 @@
 <script>
 import PageNumber from './PageNumber.vue';
 
-
+import Dropdown from './Dropdown.vue'
 
 
     export default {
-        components:{PageNumber},
+        components:{PageNumber,Dropdown},
         data(){
             return{
+                isShowMenu:true,
                 flowers:[
                     {
                         img:'/img/image 1.png',
@@ -148,7 +150,10 @@ import PageNumber from './PageNumber.vue';
                     },
                 ]
             }
-        }
+        },
+        changeShow(){
+    this.isShowMenu = !this.isShowMenu
+}
     }
 </script>
 
