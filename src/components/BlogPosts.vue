@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="mb-[100px]">
     <div class="text-center pb-9">
 <h2 class="text-[#3D3D3D] text-3xl leading-4 font-bold pb-4">Our Blog Posts</h2>
 <p class="text-[#727272] font-normal text-base">We are an online plant shop offering a wide range of cheap and trendy plants. </p>
@@ -7,7 +7,7 @@
 <div class="grid grid-cols-4 gap-11">
 <div v-for="item,index in posts" :key="index" >
 <img :src="item.img" alt="" class="pb-2">
-<div class="h-[167px] w-[268] bg-[#FBFBFB]">
+<div class="h-[167px] w-[268] bg-[#FBFBFB] px-2">
 <p class="text-base text-[#46A358] font-medium pb-1">{{ item.date }}</p>
 <h2 class="text-[#3D3D3D] font-bold text-xl pb-1">{{item.title}}</h2>
 <p class="text-[#727272] font-normal text-base pb-2">{{ item.info }}</p>

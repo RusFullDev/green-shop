@@ -9,8 +9,9 @@ import Picture from './components/Picture.vue';
 import Product from './components/Product.vue';
 import CardTrend from './components/CardTrend.vue';
 import BlogPosts from './components/BlogPosts.vue';
+import FooterSection from './components/FooterSection.vue';
 export default{
-  components:{Header,Picture,Category,Product,AuthModel,Carousel,CardTrend,BlogPosts},
+  components:{Header,Picture,Category,Product,AuthModel,Carousel,CardTrend,BlogPosts,FooterSection},
   data(){
     return{
     }
@@ -31,6 +32,7 @@ export default{
     </div>
 <CardTrend/>
 <BlogPosts/>
+<FooterSection/>
   </div>
 
 
