@@ -24,8 +24,6 @@ export default{
   <div class="container">
       <Header/>    
       <Carousel/>
-    
-  
     <div class="grid grid-cols-4 gap-12">
       <Category/>
         <Product class="col-span-3"/>

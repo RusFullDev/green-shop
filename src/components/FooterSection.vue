@@ -20,7 +20,7 @@
         </div>
 
         <div>
-            
+          
         </div>
     </div>
 </template>
@@ -31,17 +31,17 @@
             return{
                 footerCard:[
                     {
-                    img:'/public/icons/img1.svg',
+                    img:'/icons/img1.svg',
                     title:'Garden Care',
                     info:'We are an online plant shop offering a wide range of cheap and trendy plants.'
                 },
                 {
-                    img:'/public/icons/img2.svg',
+                    img:'/icons/img2.svg',
                     title:'Plant Renovation',
                     info:'We are an online plant shop offering a wide range of cheap and trendy plants.'
                 },
                 {
-                    img:'/public/icons/img3.svg',
+                    img:'/icons/img3.svg',
                     title:'Watering Graden',
                     info:'We are an online plant shop offering a wide range of cheap and trendy plants.'
                 },
