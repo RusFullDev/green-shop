@@ -16,7 +16,7 @@
              
                 <div class="flex gap-2 items-center pb-7">
                 <div v-for="item,index in socialMedia" :key="index" >
-                   <div class="border-2 px-2 py-2 rounded-md  hover:border-green-500"> <img :src="item.social" alt="social"></div> </div>
+                   <div class="border-2 px-2 py-2 rounded-md  hover:border-green-500"> <img :src="item" alt="social"></div> </div>
                 </div>
 
             </div>
@@ -50,23 +50,25 @@
                   
                 }
             ],
-            socialMedia:[
-                {
-                    social:'/icons/Facebook.svg'
-                }, 
-                {
-                    social:'/icons/Instagram.svg'
-                },
-                {
-                    social:'/icons/Twitter.svg'
-                },
-                {
-                    social:'/icons/Linkedin.svg'
-                },
-                {
-                    social:'/icons/Union.svg'
-                }
-            ],
+            socialMedia:['/icons/Facebook.svg','/icons/Instagram.svg','/icons/Twitter.svg',
+                         '/icons/Linkedin.svg','/icons/Union.svg'],
+            // socialMedia:[
+            //     {
+            //         social:'/icons/Facebook.svg'
+            //     }, 
+            //     {
+            //         social:'/icons/Instagram.svg'
+            //     },
+            //     {
+            //         social:'/icons/Twitter.svg'
+            //     },
+            //     {
+            //         social:'/icons/Linkedin.svg'
+            //     },
+            //     {
+            //         social:'/icons/Union.svg'
+            //     }
+            // ],
             payCardType:[
                 {
                     cardName:'/img/image 16.png'

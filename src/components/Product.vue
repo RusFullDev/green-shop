@@ -55,7 +55,7 @@ import Dropdown from './Dropdown.vue'
         components:{PageNumber,Dropdown},
         data(){
             return{
-                isShowMenu:true,
+                isShowMenu:false,
                 flowers:[
                     {
                         img:'/img/image 1.png',
